@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Projeto de Extensão</h1>
+    </header>
+    <section>
+    <h2>Diagnóstico de Descarte Sustentável</h2>
+
+    <form id="quizSus">
+
+        <p>1. Quando você joga lixo fora:</p>
+        <input type="radio" name="p1" value="0"> Mistura tudo<br>
+        <input type="radio" name="p1" value="1"> As vezes separa<br>
+        <input type="radio" name="p1" value="2"> Sempre separa<br>
+
+        <p>2. O que faz com óleo de cozinha?</p>
+        <input type="radio" name="p2" value="0"> Joga na pia<br>
+        <input type="radio" name="p2" value="1"> Lixo comum<br>
+        <input type="radio" name="p2" value="2"> Armazena corretamente<br>
+
+        <p>3. O que faz com pilhas?</p>
+        <input type="radio" name="p3" value="0"> Lixo comum<br>
+        <input type="radio" name="p3" value="1"> Guarda<br>
+        <input type="radio" name="p3" value="2"> Descarte correto<br>
+
+        <p>4. Roupas que não usa:</p>
+        <input type="radio" name="p4" value="0"> Joga fora<br>
+        <input type="radio" name="p4" value="1"> Guarda<br>
+        <input type="radio" name="p4" value="2"> Doa<br>
+
+        <p>5. Você pensa no impacto ambiental?</p>
+        <input type="radio" name="p5" value="0"> Nunca<br>
+        <input type="radio" name="p5" value="1"> As vezes<br>
+        <input type="radio" name="p5" value="2"> Sempre<br>
+        
+        <br>
+        <button type="button" onclick="verResultado()">Ver meu resultado</button>
+
+    </form>
+    <div id="res"></div>
+        
+    </section>
+   
+    <script src="script.js"></script>
+</body>
+</html>
