@@ -47,7 +47,10 @@ if (p5) {
         erros.push("Consciência ambiental")
     }
 }
-
+if (!p1 || !p2 || !p3 || !p4 || !p5) {
+    alert("Responda todas as perguntas antes de ver o resultado!")
+    return;
+}
 
 let mensagem = ""; 
 
