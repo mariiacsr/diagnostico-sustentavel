@@ -1,16 +1,20 @@
 body {
-    background: rgb(80, 90, 230);
-    font: normal 15pt Arial;
+    background: linear-gradient(to right, rgba(75, 226, 87, 0.432), rgba(48, 165, 97, 0.596));
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
 }
 
 header {
-    color: white;
+    color: rgba(35, 83, 187, 0.575);
     text-align: center;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: bold;
 
 }
 
 section {
-    background: white;
+    background: rgba(88, 147, 224, 0.699);
     border-radius: 10px;
     padding: 15px;
     width: 500px;
@@ -19,9 +23,33 @@ section {
 
 }
 
-footer {
-    color: white;
+h2 {
     text-align: center;
-    font-style: italic;
+    font-size: 20px;
+    color:black;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+button {
+    background: #20db9471;
+    padding: 8px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e0353571;
+}
+
+#res {
+    background: #f0f9ff;
+    margin-top: 20px;
+   
 
 }
