@@ -67,7 +67,7 @@ let mensagem = "";
         mensagem += "<br><br><strong>Dicas para melhorar:</strong><br>";
 
         for (let i = 0; i < erros.length; i++) { 
-            mensagem += "- Atenção com " + erros[i] + "<br>";
+            mensagem += "- Solução 👉" + erros[i] + "<br>";
         }
     }
 document.getElementById("res").innerHTML = mensagem;
