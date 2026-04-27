@@ -1,13 +1,13 @@
 function verResultado() {
-let pontos = 0; //começa zerado e vai somando
-let erros = []; //guarda onde a pessoa errou. lista vazia chamada erros
+let pontos = 0; 
+let erros = []; 
 
 //Pergunta 1
-let p1 = document.querySelector('input[name="p1"]:checked'); //pega opção marcada da pergunta 1
-if (p1) { // vê se respondeu
-    pontos += Number(p1.value); //soma pontuação. pontos = pontos + Number... (mesma coisa)
+let p1 = document.querySelector('input[name="p1"]:checked'); 
+if (p1) { 
+    pontos += Number(p1.value); 
     if (p1.value == "0") {
-        erros.push("Separação do lixo"); // se errou, adiciona esse erro na lista
+        erros.push("Separação do lixo"); 
     }
 
 }   
@@ -49,21 +49,21 @@ if (p5) {
 }
 
 
-let mensagem = ""; //variável mensagem vazia pra montar depois
+let mensagem = ""; 
 
     if (pontos <= 3) {
         mensagem = "😬 Seu nível é baixo. Você pode melhorar bastante seus hábitos!";
-    } else if (pontos <= 7) { //se não é <= 3, verifica esse
+    } else if (pontos <= 7) { 
         mensagem = "🙂 Você está no caminho certo, mas ainda pode evoluir!";
     } else {
         mensagem = "🌱 Parabéns! Você tem ótimos hábitos sustentáveis!";
     }
 
     
-    if (erros.length > 0) { // se a pessoa errou algo, logo é mais que 0. Dá dicas pra melhorar
+    if (erros.length > 0) { 
         mensagem += "<br><br><strong>Dicas para melhorar:</strong><br>";
 
-        for (let i = 0; i < erros.length; i++) { //pega todos os erros e mostra um por um na tela
+        for (let i = 0; i < erros.length; i++) { 
             mensagem += "- Atenção com " + erros[i] + "<br>";
         }
     }
